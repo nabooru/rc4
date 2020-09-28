@@ -77,6 +77,10 @@ void rc4_encrypt_skip(rc4_state_t *state, const unsigned char *in, unsigned char
        out[i] = in[i] ^ k; 
    }      
 
+
+   state->x = x;
+   state->y = y;
+
 }
 
 
