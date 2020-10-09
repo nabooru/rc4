@@ -9,7 +9,7 @@ typedef struct rc4_state {
 } rc4_state_t;
 
 void rc4_init(rc4_state_t *state, const unsigned char *key, unsigned int keylen);
-void rc4_encrypt(rc4_state_t *state, const unsigned char *in, unsigned char *out, unsigned int len);
+void rc4_encrypt(rc4_state_t *state, const unsigned char *in, unsigned char *out, unsigned long len);
 void rc4_encrypt_skip(rc4_state_t *state, const unsigned char *in, unsigned char *out, unsigned long len, unsigned long skip);
 
 #endif /* _RC4_H_ */

@@ -25,9 +25,9 @@ void rc4_init(rc4_state_t *state, const unsigned char *key, unsigned int keylen)
 
 void rc4_encrypt(rc4_state_t *state, const unsigned char *in, unsigned char *out, unsigned long len)
 {
-   register unsigned char x, y;
-   register unsigned char tmp;
-   register unsigned char k; /* Keystream. */
+   unsigned char x, y;
+   unsigned char tmp;
+   unsigned char k; /* Keystream. */
    unsigned long i;
 
    x = state->x;
@@ -51,9 +51,9 @@ void rc4_encrypt(rc4_state_t *state, const unsigned char *in, unsigned char *out
 
 void rc4_encrypt_skip(rc4_state_t *state, const unsigned char *in, unsigned char *out, unsigned long len, unsigned long skip)
 {
-   register unsigned char x, y;
-   register unsigned char tmp;
-   register unsigned char k; /* Keystream. */
+   unsigned char x, y;
+   unsigned char tmp;
+   unsigned char k; /* Keystream. */
    unsigned long i;
 
    x = state->x;
